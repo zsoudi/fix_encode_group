@@ -1,0 +1,13 @@
+diff --git a/src/Plugin/field_group/FieldGroupFormatter/Tab.php b/src/Plugin/field_group/FieldGroupFormatter/Tab.php
+index 7cc8a64..aed333d 100644
+--- a/src/Plugin/field_group/FieldGroupFormatter/Tab.php
++++ b/src/Plugin/field_group/FieldGroupFormatter/Tab.php
+@@ -32,7 +32,7 @@ class Tab extends FieldGroupFormatterBase {
+ 
+     $add = array(
+       '#type' => 'details',
+-      '#title' => Html::escape($this->t($this->getLabel())),
++      '#title' => $this->t($this->getLabel()),
+       '#description' => $this->getSetting('description'),
+     );
+ 
